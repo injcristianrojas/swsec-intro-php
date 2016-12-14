@@ -25,7 +25,7 @@ $is_post = $_SERVER['REQUEST_METHOD'] === 'POST';
 				<li><a title="Saludos" id="hello" href="saludos.php">Saludos</a></li>
 				<?php if ($is_session_started) { ?>
 				<li>|</li>
-				<li><a title="Muro" id="wall" href="Wall">Muro</a></li><li>|</li>
+				<li><a title="Muro" id="wall" href="wall.php">Muro</a></li><li>|</li>
 				<li><a title="Imagenes" id="images" href="pictures.php">Imagenes</a></li><li>|</li>
 				<li><a title="Usuarios" id="users" href="lista_usuarios.php?type=1">Usuarios</a></li><li>|</li>
 				<li><a title="Cuenta" id="account" href="cuenta.php">Cuenta</a></li><li>|</li>
