@@ -1,2 +1,3 @@
 # swsec-intro-php
-Simple PHP application for software security classes
+PHP port for [SWSEC-INTRO](https://github.com/injcristianrojas/swsec-intro).
+Will document this soon.
