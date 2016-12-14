@@ -1,4 +1,5 @@
 <?php
+include_once('constants.php');
 session_start();
 $is_session_started = isset($_SESSION['username']);
 $is_post = $_SERVER['REQUEST_METHOD'] === 'POST';
@@ -10,6 +11,7 @@ $is_post = $_SERVER['REQUEST_METHOD'] === 'POST';
 <title>Fans de las aves chilenas (SWSEC Intro)</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
 </head>
 <body>
 

@@ -11,14 +11,14 @@ if ($expire_session) {
   header('Location: /index.php');
 }
 
-if (!file_exists('db/birds_fans.sqlite'))
+if (!file_exists(SQLITE_FILE))
   include_once('db/db_startup.php');
 
 if ($is_post) {
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  if ($dbh = new SQLite3('db/birds_fans.sqlite')) {
+  if ($dbh = new SQLite3(SQLITE_FILE)) {
     $result = $dbh->query("select * from usuarios where username = '$username'
       and password = '$password'");
     $nrows = 0;

@@ -8,5 +8,7 @@
   </div>
 </div>
 
+<p><a class="praetorian" href="flush.php">&#960</a></p>
+
 </body>
 </html>

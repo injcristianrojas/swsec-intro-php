@@ -4,7 +4,7 @@ include_once('header.php');
 
 <?php
 if ($is_post) {
-  if ($dbh = new SQLite3('db/birds_fans.sqlite')) {
+  if ($dbh = new SQLite3(SQLITE_FILE)) {
     $mensaje = $_POST['mensaje'];
     $dbh->exec("insert into mensajes (mensaje) values ('$mensaje')");
     header('Location: /wall.php');

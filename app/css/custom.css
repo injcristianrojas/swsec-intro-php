@@ -1,0 +1,13 @@
+.praetorian {
+  font-family: sans-serif;
+  font-size: 14pt;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  color: black;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
