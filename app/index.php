@@ -1,19 +1,18 @@
 <?php
-  include_once('header.php');
+include_once('header.php');
 ?>
 
 <?php
-if (!file_exists('db/birds_fans.sqlite'))
-  include_once('db/db_startup.php');
-
 $expire_session = isset($_GET['kill_session']);
-$is_post = $_SERVER['REQUEST_METHOD'] === 'POST';
 
 if ($expire_session) {
   session_unset();
   session_destroy();
   header('Location: /index.php');
 }
+
+if (!file_exists('db/birds_fans.sqlite'))
+  include_once('db/db_startup.php');
 
 if ($is_post) {
   $username = $_POST['username'];

@@ -1,6 +1,7 @@
 <?php
 session_start();
 $is_session_started = isset($_SESSION['username']);
+$is_post = $_SERVER['REQUEST_METHOD'] === 'POST';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
@@ -21,9 +22,6 @@ $is_session_started = isset($_SESSION['username']);
 				<li>Usuario: <?php echo $_SESSION["username"] ?></li><li>|</li>
 				<?php } ?>
         <li><a title="Home" id="home" href="index.php">Home</a></li><li>|</li>
-				<?php if (!$is_session_started) { ?>
-				<li><a title="Ingresar" id="login" href="login.php">Ingresar</a></li><li>|</li>
-				<?php } ?>
 				<li><a title="Saludos" id="hello" href="saludos.php">Saludos</a></li>
 				<?php if ($is_session_started) { ?>
 				<li>|</li>
