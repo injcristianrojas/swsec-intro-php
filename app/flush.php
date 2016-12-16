@@ -1,6 +1,5 @@
 <?php
 include_once('constants.php');
-unlink(SQLITE_FILE);
 include_once('db/db_startup.php');
 session_start();
 session_unset();
@@ -18,8 +17,17 @@ session_destroy();
       <img src="images/thenetiplookup.jpg" />
     </p>
     <p class="center">
-      Database flushed.<br/>
       Session destroyed.<br/>
+      <?php unlink(SQLITE_FILE); ?>
+      Database flushed.<br/>
+      <?php
+        $files = glob(UPLOAD_DIR . '*');
+        foreach($files as $file) {
+          if(is_file($file))
+            unlink($file);
+        }
+      ?>
+      Uploaded files erased.<br/>
       <a href="index.php">Go back</a>
     </p>
  	</body>
