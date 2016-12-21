@@ -3,7 +3,7 @@ include_once('header.php');
 ?>
 
 <?php
-if ($dbh = new SQLite3('db/birds_fans.sqlite')) {
+if ($dbh = new SQLite3(SQLITE_FILE)) {
   echo("<table border='1' class='padding'>");
   echo("<tr><td class='padding'><b>Usuarios del sistema</b></td></tr>");
   $result = $dbh->query("select * from usuarios where type = " . $_GET['type']);

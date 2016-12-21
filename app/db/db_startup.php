@@ -1,8 +1,6 @@
 <?php
 
-  /* TODO Create a The Net Preatorian-like link for password reset */
-
-  $db = new PDO('sqlite:db/birds_fans.sqlite');
+  $db = new PDO('sqlite:' . SQLITE_FILE);
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $db->exec(
     "CREATE TABLE IF NOT EXISTS 'mensajes' (
