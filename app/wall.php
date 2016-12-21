@@ -22,6 +22,7 @@ if ($is_post) {
 <p>&nbsp;</p>
 
 <?php
+// TODO usar constante para ubicación del archivo SQLITE 
 if ($dbh = new SQLite3('db/birds_fans.sqlite')) {
   $result = $dbh->query("select mensaje from mensajes");
   while ($row = $result->fetchArray())

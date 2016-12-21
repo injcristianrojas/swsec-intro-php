@@ -29,7 +29,7 @@ $is_post = $_SERVER['REQUEST_METHOD'] === 'POST';
 				<li>|</li>
 				<li><a title="Muro" id="wall" href="wall.php">Muro</a></li><li>|</li>
 				<li><a title="Imagenes" id="images" href="pictures.php">Imagenes</a></li><li>|</li>
-				<li><a title="Usuarios" id="users" href="lista_usuarios.php?type=1">Usuarios</a></li><li>|</li>
+				<li><a title="Usuarios" id="users" href="usuarios.php?type=1">Usuarios</a></li><li>|</li>
 				<li><a title="Cuenta" id="account" href="cuenta.php">Cuenta</a></li><li>|</li>
 				<li><a title="Salir" id="exit" href="index.php?kill_session=1">Salir</a></li>
 				<?php } ?>

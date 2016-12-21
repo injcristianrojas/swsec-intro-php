@@ -11,3 +11,11 @@
 .center {
   text-align: center;
 }
+
+table.padding {
+  border-spacing: 2px;
+}
+
+td.padding {
+  padding: 2px;
+}
