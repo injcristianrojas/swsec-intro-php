@@ -2,6 +2,11 @@
 PHP port for [SWSEC-INTRO](https://github.com/injcristianrojas/swsec-intro).
 Will document this soon.
 
+# Requirements
+
+* PHP-CLI
+* PHP-PDO (sqlite3)
+
 # Usage
 
 Start the server using
